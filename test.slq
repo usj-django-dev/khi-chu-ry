@@ -1,0 +1,19 @@
+def solve[n:!ℕ](bits:!𝔹^n){
+  // prepare superposition between 0 and 1
+  x:=H(0:𝔹);
+  // prepare superposition between bits and 0
+  qs := if x then bits else (0:int[n]) as 𝔹^n;
+  // uncompute x
+  forget(x=qs[0]); // valid because `bits[0]==1`
+  return qs;
+}
+
+def implicitMeas[n:!ℕ](x:uint[n]){
+  y := x % 2;
+  return y;
+} // parameter 'x' is not consumed
+// EXAMPLE CALL
+
+def main(){
+ return implicitMeas(3)
+}
