@@ -1,0 +1,112 @@
+pf = 
+  stateEstimatorPF with properties:
+
+           NumStateVariables: 3
+                NumParticles: 1000
+          StateTransitionFcn: @nav.algs.gaussianMotion
+    MeasurementLikelihoodFcn: @nav.algs.fullStateMeasurement
+     IsStateVariableCircular: [0 0 0]
+            ResamplingPolicy: [1x1 resamplingPolicyPF]
+            ResamplingMethod: 'multinomial'
+       StateEstimationMethod: 'mean'
+            StateOrientation: 'row'
+                   Particles: [1000x3 double]
+                     Weights: [1000x1 double]
+                       State: 'Use the getStateEstimate function to see the value.'
+             StateCovariance: 'Use the getStateEstimate function to see the value.'
+pf = 
+  stateEstimatorPF with properties:
+
+           NumStateVariables: 3
+                NumParticles: 1000
+          StateTransitionFcn: @nav.algs.gaussianMotion
+    MeasurementLikelihoodFcn: @nav.algs.fullStateMeasurement
+     IsStateVariableCircular: [0 0 0]
+            ResamplingPolicy: [1x1 resamplingPolicyPF]
+            ResamplingMethod: 'multinomial'
+       StateEstimationMethod: 'mean'
+            StateOrientation: 'row'
+                   Particles: [1000x3 double]
+                     Weights: [1000x1 double]
+                       State: 'Use the getStateEstimate function to see the value.'
+             StateCovariance: 'Use the getStateEstimate function to see the value.'
+pf = 
+  stateEstimatorPF with properties:
+
+           NumStateVariables: 3
+                NumParticles: 1000
+          StateTransitionFcn: @nav.algs.gaussianMotion
+    MeasurementLikelihoodFcn: @nav.algs.fullStateMeasurement
+     IsStateVariableCircular: [0 0 0]
+            ResamplingPolicy: [1x1 resamplingPolicyPF]
+            ResamplingMethod: 'multinomial'
+       StateEstimationMethod: 'mean'
+            StateOrientation: 'row'
+                   Particles: [1000x3 double]
+                     Weights: [1000x1 double]
+                       State: 'Use the getStateEstimate function to see the value.'
+             StateCovariance: 'Use the getStateEstimate function to see the value.'
+pf = 
+  stateEstimatorPF with properties:
+
+           NumStateVariables: 3
+                NumParticles: 1000
+          StateTransitionFcn: @nav.algs.gaussianMotion
+    MeasurementLikelihoodFcn: @nav.algs.fullStateMeasurement
+     IsStateVariableCircular: [0 0 0]
+            ResamplingPolicy: [1x1 resamplingPolicyPF]
+            ResamplingMethod: 'multinomial'
+       StateEstimationMethod: 'mean'
+            StateOrientation: 'row'
+                   Particles: [1000x3 double]
+                     Weights: [1000x1 double]
+                       State: 'Use the getStateEstimate function to see the value.'
+             StateCovariance: 'Use the getStateEstimate function to see the value.'
+pf = 
+  stateEstimatorPF with properties:
+
+           NumStateVariables: 3
+                NumParticles: 1000
+          StateTransitionFcn: @nav.algs.gaussianMotion
+    MeasurementLikelihoodFcn: @nav.algs.fullStateMeasurement
+     IsStateVariableCircular: [0 0 0]
+            ResamplingPolicy: [1x1 resamplingPolicyPF]
+            ResamplingMethod: 'multinomial'
+       StateEstimationMethod: 'mean'
+            StateOrientation: 'row'
+                   Particles: [1000x3 double]
+                     Weights: [1000x1 double]
+                       State: 'Use the getStateEstimate function to see the value.'
+             StateCovariance: 'Use the getStateEstimate function to see the value.'
+pf = 
+  stateEstimatorPF with properties:
+
+           NumStateVariables: 3
+                NumParticles: 1000
+          StateTransitionFcn: @nav.algs.gaussianMotion
+    MeasurementLikelihoodFcn: @nav.algs.fullStateMeasurement
+     IsStateVariableCircular: [0 0 0]
+            ResamplingPolicy: [1x1 resamplingPolicyPF]
+            ResamplingMethod: 'multinomial'
+       StateEstimationMethod: 'mean'
+            StateOrientation: 'row'
+                   Particles: [1000x3 double]
+                     Weights: [1000x1 double]
+                       State: 'Use the getStateEstimate function to see the value.'
+             StateCovariance: 'Use the getStateEstimate function to see the value.'
+pf = 
+  stateEstimatorPF with properties:
+
+           NumStateVariables: 3
+                NumParticles: 1000
+          StateTransitionFcn: @nav.algs.gaussianMotion
+    MeasurementLikelihoodFcn: @nav.algs.fullStateMeasurement
+     IsStateVariableCircular: [0 0 0]
+            ResamplingPolicy: [1x1 resamplingPolicyPF]
+            ResamplingMethod: 'multinomial'
+       StateEstimationMethod: 'mean'
+            StateOrientation: 'row'
+                   Particles: [1000x3 double]
+                     Weights: [1000x1 double]
+                       State: 'Use the getStateEstimate function to see the value.'
+             StateCovariance: 'Use the getStateEstimate function to see the value.'
