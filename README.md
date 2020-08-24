@@ -1,2 +1,2 @@
 # khi-chu-ry
-vgvjnkjhgyv
+Ki dibo jani na
