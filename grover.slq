@@ -1,0 +1,35 @@
+def grover[n:!ℕ] (f:const int[n]! 𝔹)  {
+    nInterations:=π/4;
+    cand:=0:int[n];
+    for k in [0..n) { cand[k] := H(cand[k]); }
+    for k in [0..nInterations) {
+
+        if f(cand) { phase(π); }
+
+
+        cand:=groverDiff[n] (cand);
+    }
+    return measure(cand);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
