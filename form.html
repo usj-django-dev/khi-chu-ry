@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <h3>{{ heading_1 }}</h3>
+    <a href="{% url 'first_app:index' %}"> Back </a>
+    <form  action="" method="POST">
+      {{ test_form.as_p }}
+      {% csrf_token %}
+      <input type="submit" name="submit" value="submit">
+    </form>
+    <hr>
+
+    {% if form_submited %}
+      <p>Name: {{ user_name }}</p>
+      <p>Date of Birth: {{ user_dob }}</p>
+      <p>Email: {{ user_email }}</p>
+    {% endif %}
+  </body>
+</html>
