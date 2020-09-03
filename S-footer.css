@@ -1,0 +1,80 @@
+.np {border-radius: 50%;}
+.ns {border-radius: 50%;}
+.nd {border-radius: 50%;}
+.nf {border-radius: 50%;}
+.ng {border-radius: 50%;}
+
+
+
+
+
+
+
+
+.image { position:absolute; 
+		 padding:5px;
+		 margin: 20px 5px 0px 0px;} 
+
+.image ul{ margin:0px;
+		   padding:0px; 
+ 		   list-style:none;}
+
+.image ul li{ float:left;} 
+
+.image ul li a { display:block; 
+	 			 color:#716863;
+	 			 padding:5px;}
+		
+
+.image ul li a:hover{ color:black;
+					  background-color:042E0B;}
+
+
+
+
+.navigation-lists{max-width: 1300px; 
+				  list-style: none;
+				  text-decoration: none;
+				  margin-top: 10px;
+				  padding: 0px;
+				  display: flex;
+				  flex-direction: row;}
+
+
+.navigation-items  {text-decoration: none;}
+
+
+
+.navigation-iteams a:hover{color: green;}
+.navigation-iteams a:active{color: green;}
+
+
+
+
+
+
+
+.navigation-list{ list-style: none;
+				  text-decoration: none;
+				  margin-top: 10px;
+				  padding: 0px;
+				  display: flex;
+				  flex-direction: row;}
+
+
+.navigation-item a {text-decoration: none; color: green;}
+.navigation-item li {margin-top: 50px;}
+
+
+.navigation-iteam a:hover{color: green;}
+.navigation-iteam a:active{color: green;}
+
+
+
+.circle-icon {
+    background: #ffc0c0;
+    padding:30px;
+    border-radius: 50%;
+}
+
+
