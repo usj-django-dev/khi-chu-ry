@@ -1,0 +1,268 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	background: url(images/page_bg.jpg);
+	color: #6f6f6f;
+}
+
+html, body, #wrapper, h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+th, td {
+	font-size: 12px;
+}
+
+img { border: 0px; }
+
+#wrapper {
+	margin: 16px auto;
+	text-align: left;
+	width: 750px;
+	position: relative;
+}
+
+h1, h2, h3 {
+	font-size: 12px;
+}
+
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+
+h3 {
+	padding: 4px 0px 0px 0px;
+}
+
+p {
+	margin: 1em 0px;
+	padding: 0px;
+}
+
+.block {
+	display: block;
+}
+
+.clear {
+	clear: both;
+	height: 1px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width:0px;
+	height:0px;
+	overflow:hidden;
+	font-size: 1px;
+	line-height: 1px;
+	border: none 0px #FFFFFF;
+}
+
+* html .clear {
+	margin-top: -5px;
+	margin-bottom: -4px;
+}
+
+.left {
+	float: left;
+	margin: 1px 8px 0px 0px;
+}
+
+.softright {
+	text-align: right;
+}
+
+.readmore {
+	text-align: right;
+}
+
+/* ***** */
+
+a {
+	color: #6f6f6f;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #000;
+}
+
+#inner {
+	background: white;
+	padding: 1px;
+	border: 1px solid #d9d9d9;
+}
+
+#jnner {
+	border-top: 1px solid #dadada;
+	border-left: 1px solid #dadada;
+	background: #efebe3;
+}
+
+* html #jnner {
+	width: 100%;
+}
+
+#nav {
+	float: left;
+	width: 348px;
+}
+
+* html #nav a {
+	float: left;
+	f\loat: none;
+}
+
+#nav img {
+	float: none;
+	f\loat: left;
+}
+	
+#body {
+	float: left;
+	width: 348px;
+	background: white url(images/body_bg.jpg) bottom left no-repeat;
+}
+
+* html #body p {
+	margin: 0px;
+	padding: 0px 0px 1em 0px;
+}
+
+* html #body .inner {
+	padding-top: 0px;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #84b14c;
+}
+
+#body .inner {
+	padding: 4px 15px 0px 130px;
+	border-bottom: 3px solid #84b14c;
+}
+
+#right {
+	display: inline;
+	float: right;
+	width: 383px;
+	margin: 7px 7px 0px 0px;
+	font-size: 11px;
+}
+
+#right .boxed {
+	background: white;
+	padding: 2px;
+	position: relative;
+	margin-bottom: 7px;
+}
+
+* html #right .boxed div {
+	width: 379px;
+	wid\th: 254px;
+	position: relative;
+}
+
+#right .boxed div {
+	border: 1px solid #ececec;
+	margin: 0px;
+	padding: 10px 18px 0px 105px;
+}
+
+#right .buynow {
+	text-align: right;
+	margin-bottom: -1.7em;
+}
+
+#right .price {
+	margin-top: 0.5em;
+}
+
+#right h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+#right a {
+	color: #bb0000;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+#right a:hover {
+	color: #630000;
+}
+
+#right p {
+	margin: 0.55em 0px;
+}
+
+* html #right p {
+	margin: 0.3em 0px;
+}
+
+#right #nails {
+	float: left;
+	margin-top: 6px;
+	margin-left: -95px;
+	position:relative;
+}
+
+#right #skins {
+	float: left;
+	margin-top: 16px;
+	margin-left: -95px;
+}
+	
+#right #makess {
+	float: left;
+	margin-top: 10px;
+	margin-left: -95px;
+	margin-bottom: -3px;
+}
+
+#right #thelastbox {
+	margin-bottom: 5px;
+}
+
+#gallery {
+	display: inline;
+	float: right;
+	width: 216px;
+	margin-right: 0px;
+	background: white;
+}
+
+#gallery .inner {
+	padding: 2px;
+}
+
+#gallery h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+#gallery .inner div {
+	border: 1px solid #ececec;
+	border-top: none;
+	padding: 1px;
+}
+
+#gallery th {
+	font-weight: normal;
+	text-align: center;
+	font-size: 9px;
+	line-height: 9px;
+}
+
+* html #gallery th {
+	font-size: 10px;
+	line-height: 10px;
+}
