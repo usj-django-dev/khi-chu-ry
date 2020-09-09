@@ -1,0 +1,120 @@
+*{margin:0px;
+ padding:0px;}
+.all {font-family:Arial; 
+	color:000;
+	background-repeat: repeat;
+	background-attachment: fixed;}
+
+
+
+
+	
+
+
+
+
+
+.wsa p {width: 200px;color: white;font-size: 25px;background-color:#35292b;
+		height: 30px;
+		margin: 50px 100px 15px 30px;  }		
+
+.zaxa { height:400px;background-color:#35292b;
+	padding:20px; 
+	    } 
+.zaxa ul{ margin:10px;
+		 padding:10px; 
+ 		 list-style:none;}
+.zaxa ul li{border-bottom:1px solid black;}
+.zaxa ul li a{ display:inline-block; 
+			  text-decoration:none;
+	 		  color:#716863;
+	 		  padding:10px;}
+.zaxa ul li a:hover{ color:white;}
+
+
+
+
+
+
+
+
+.vertical_line_1{ float: left; width: 2px;height: 30px;background-color: silver; }	
+.vertical_line_2{ float: left; width: 560px;height: 2px;background-color: silver;margin-top: 15px; }	
+.vertical_line_3{ float: right;width: 2px;height: 30px;background-color: silver; }	
+.vertical_line_4{ float: right;width: 560px;height: 2px;background-color: silver;margin-top: 15px; }   
+
+
+
+     
+
+
+.navigation-list{ list-style: none;
+				  text-decoration: none;
+				  margin: 0px;
+				  padding: 0px;
+				  display: flex;
+				  flex-direction: row;}
+
+
+.navigation-item a {text-decoration: none; list-style: none; color: black;}
+
+
+.navigation-iteam a:hover{color: #fa923f;}
+.navigation-iteam a:active{color: #fa923f;}
+
+
+
+
+
+
+
+
+.wsb p {width: 200px;color: white;font-size: 25px;
+		height: 30px;
+		margin: 50px 100px 15px 30px;  }		
+
+.zaxb { height:400px;background-color:#35292b;
+	padding:20px; 
+	    } 
+.zaxb ul{ 
+		 padding:5px; 
+ 		 list-style:none;}
+.zaxb ul li{border-bottom:1px solid black;}
+.zaxb ul li a{ display:block; 
+			  text-decoration:none;
+	 		  color:#716863;
+	 		  padding:0px;}
+.zaxb ul li a:hover{ color:white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wsc p {width: 200px;color: white;font-size: 25px;background-color:#35292b;
+		height: 30px;
+		margin: 50px 100px 15px 30px;  }		
+
+.zaxc { /*height:400px;*/background-color:#35292b;
+	padding:20px; 
+	    } 
+.zaxc ul{ margin:10px;
+		 padding:10px; 
+ 		 list-style:none;}
+.zaxc ul li{border-bottom:1px solid black;}
+.zaxc ul li a{ display:block; 
+			  text-decoration:none;
+	 		color:#716863;
+	 		  padding:10px;}
+.zaxc ul li a:hover{ color:white;}
