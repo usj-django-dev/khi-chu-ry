@@ -68,7 +68,23 @@ call lmdif1(fcn, m, n, pars, fvec, tol, info, iwa, wa, size(wa))
 if (info /= 1) stop "failed to converge"
 
 contains
+ftyuj
+subroutine fcn(m, n, x, fvec, iflag)
+integer, intent(in) :: m, n, iflag
+real(dp), intent(in) :: x(n)
+real(dp), intent(out) :: fvec(m)
+! Suppress compiler warning:
+fvec(1) = iflag
+fvec = data_y - expr(data_x, x)
+end subroutine
 
+end subroutine
+
+end module
+
+
+contains
+ftyuj
 subroutine fcn(m, n, x, fvec, iflag)
 integer, intent(in) :: m, n, iflag
 real(dp), intent(in) :: x(n)
