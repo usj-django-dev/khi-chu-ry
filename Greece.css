@@ -42,6 +42,84 @@
 
 
 
+ padding:0px;}
+.all {font-family:Arial; 
+	color:000;
+	background-repeat: repeat;
+	background-attachment: fixed;}
+
+
+
+.r{border: none;font-size: 8px; color: white; float: left;}
+
+
+.designer { align-content: center;
+			display: inline-block;
+			padding-top:} 
+
+.designer ul {display: inline-block;
+			  overflow: hidden; 
+	 		  list-style:none;  }
+
+.designer ul li { float:left;}
+
+.designer ul li a {height: 200px;
+				   border-radius: 10px auto;
+				   text-decoration:none;
+				   background:#cfcfcf;
+		 		   padding:10px; }
+
+.designer ul li a:hover{border-radius: 10px red; }
+
+
+.email{ width: 350px;height: 40px; }
+
+ padding:0px;}
+.all {font-family:Arial; 
+	color:000;
+	background-repeat: repeat;
+	background-attachment: fixed;}
+
+
+
+.r{border: none;font-size: 8px; color: white; float: left;}
+
+
+.designer { align-content: center;
+			display: inline-block;
+			padding-top:} 
+
+.designer ul {display: inline-block;
+			  overflow: hidden; 
+	 		  list-style:none;  }
+
+.designer ul li { float:left;}
+
+.designer ul li a {height: 200px;
+				   border-radius: 10px auto;
+				   text-decoration:none;
+				   background:#cfcfcf;
+		 		   padding:10px; }
+
+.designer ul li a:hover{border-radius: 10px red; }
+
+
+.email{ width: 350px;height: 40px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
