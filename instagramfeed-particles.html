@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Deft | CodeRare</title>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+      <!-- Favicon ================== -->
+      <!-- Standard -->
+      <link rel="shortcut icon" href="img/favicon.png">
+      <!-- Retina iPad Touch Icon-->
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
+      <!-- Retina iPhone Touch Icon-->
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
+      <!-- Standard iPad Touch Icon-->
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
+      <!-- Standard iPhone Touch Icon-->
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
+
+      <!--  Resources style ================== -->
+      <link href="css/theme-NeonSun.css" rel="stylesheet" type="text/css" media="all"/>
+    </head>
+    <body>
+      <section class="animsition">
+
+        <div id="leftSide">
+          <div id="homeCenter">
+            <!-- Your logo -->
+  			    <img src="img/avatar.png" alt="" class="main-logo" />
+
+            <div class="h-content">
+              <div class="heading text-white">
+                <h1><i class="ion-social-instagram-outline"></i> CODE.RARE</h1>
+                  <h2>Stay tunned, we're launching very soon, follow us for update</h2>
+              </div>
+            </div>
+
+            <ul class="social_icons">
+              <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+              <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+              <li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
+              <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
+              <li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
+            </ul>
+
+            <div id="particles-js" class="gradient"></div>
+            <div class="count-particles">
+              <span class="js-count-particles"></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="rightSide">
+          <div class="instagram_feed" data-user-name="awwwards">
+  					<ul class="row"></ul>
+  				</div>
+
+          <footer>
+            <p class="uppercase">© Deft - Made With Love <i class="ion-heart"></i></p>
+          </footer>
+        </div>
+      </section>
+
+      <script src="js/jquery-1.11.3.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/animsition.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/twitterFetcher_min.js"></script>
+      <script src="js/masonry.pkgd.min.js"></script>
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <script src="js/jquery.flexslider-min.js"></script>
+      <script src="js/photoswipe.min.js"></script>
+      <script src="js/photoswipe-ui-default.min.js"></script>
+      <script src="js/jqinstapics.min.js"></script>
+      <script src="js/particles.min.js"></script>
+      <script type="text/javascript">
+      particlesJS("particles-js", {"particles":{"number":{"value":160,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":6,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"bubble"},"onclick":{"enable":false,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+      </script>
+      <script src="js/script.js"></script>
+  </body>
+</html>
