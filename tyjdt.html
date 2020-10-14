@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<html><head><style>            div.header {                font-family: "Segoe UI Light","sans-serif";                font-size: 20.0pt;                color:#2A2A2A;                padding-bottom:34px;            }            a:link {                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#00749E;                text-decoration:none;            }            table tr.Header {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Regular {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Secondary {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#707070;                text-decoration:none;            }            div.Copyright {                padding-top:60px;                font-family: "Segoe UI SemiLight","sans-serif";                font-size: 11.0pt;                color:#2A2A2A;           }           div.NoList {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }        </style></head><title>Apps removed while resetting your PC</title><body leftmargin="60px" topmargin="50px"><div dir="ltr" lang="en-US"><div class="header">Apps removed while resetting your PC</div><table width="730px" border="1px" frame="void" rules="groups"><tr class="Header"><td width="60%" height="30px" valign="top">App name</td><td width="30%" height="30px" valign="top">Publisher</td><td width="10%" height="30px" valign="top">Version</td></tr><tbody><tr><td height="10px" colspan="3"/></tr><tr><td class="Regular">Adobe Creative Cloud</td><td class="Secondary">Adobe Systems Incorporated</td><td class="Secondary">5.2.1.441</td></tr><tr><td class="Regular">Atom</td><td class="Secondary">GitHub Inc.</td><td class="Secondary">1.50.0</td></tr><tr><td class="Regular"><a href="http://www.google.com">Backup and Sync from Google</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.50.3166.0017</td></tr><tr><td class="Regular">Google Chrome</td><td class="Secondary">Google LLC</td><td class="Secondary">84.0.4147.135</td></tr><tr><td class="Regular">Intel(R) Processor Graphics</td><td class="Secondary">Intel Corporation</td><td class="Secondary">26.20.100.7325</td></tr><tr><td class="Regular">Kite</td><td class="Secondary">Manhattan Engineering Inc</td><td class="Secondary"></td></tr><tr><td class="Regular"><a href="http://go.microsoft.com/fwlink/?LinkID=223554">Microsoft OneDrive</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">20.134.0705.0008</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular"><a href="https://code.visualstudio.com/">Microsoft Visual Studio Code (User)</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">1.48.0</td></tr><tr><td class="Regular"><a href="http://photos.google.com/">Picasa 3</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.9</td></tr><tr><td class="Regular">PotPlayer</td><td class="Secondary">Kakao Corp.</td><td class="Secondary">200730</td></tr><tr><td class="Regular"><a href="https://www.jetbrains.com/products">PyCharm Community Edition 2020.1.2</a></td><td class="Secondary">JetBrains s.r.o.</td><td class="Secondary">201.7846.77</td></tr><tr><td class="Regular"><a href="http://www.python.org/">Python 3.8.3 (32-bit)</a></td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.3150.0</td></tr><tr><td class="Regular">Python Launcher</td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.7072.0</td></tr><tr><td class="Regular"><a href="http://www.sublimetext.com">Sublime Text 3</a></td><td class="Secondary">Sublime HQ Pty Ltd</td><td class="Secondary"></td></tr><tr><td class="Regular">Windows SDK AddOn</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.1.0.0</td></tr><tr><td class="Regular"><a href="https://community.bitnami.com">XAMPP</a></td><td class="Secondary">Bitnami</td><td class="Secondary">7.4.7-0</td></tr><tr><td class="Regular"><a href="https://zoom.us">Zoom</a></td><td class="Secondary">Zoom Video Communications, Inc.</td><td class="Secondary">5.1</td></tr></tbody></table><div class="Copyright">Monday, August 24, 2020 7:26 AM</div></div></body></html>
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<html><head><style>            div.header {                font-family: "Segoe UI Light","sans-serif";                font-size: 20.0pt;                color:#2A2A2A;                padding-bottom:34px;            }            a:link {                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#00749E;                text-decoration:none;            }            table tr.Header {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Regular {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Secondary {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#707070;                text-decoration:none;            }            div.Copyright {                padding-top:60px;                font-family: "Segoe UI SemiLight","sans-serif";                font-size: 11.0pt;                color:#2A2A2A;           }           div.NoList {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }        </style></head><title>Apps removed while resetting your PC</title><body leftmargin="60px" topmargin="50px"><div dir="ltr" lang="en-US"><div class="header">Apps removed while resetting your PC</div><table width="730px" border="1px" frame="void" rules="groups"><tr class="Header"><td width="60%" height="30px" valign="top">App name</td><td width="30%" height="30px" valign="top">Publisher</td><td width="10%" height="30px" valign="top">Version</td></tr><tbody><tr><td height="10px" colspan="3"/></tr><tr><td class="Regular">Adobe Creative Cloud</td><td class="Secondary">Adobe Systems Incorporated</td><td class="Secondary">5.2.1.441</td></tr><tr><td class="Regular">Atom</td><td class="Secondary">GitHub Inc.</td><td class="Secondary">1.50.0</td></tr><tr><td class="Regular"><a href="http://www.google.com">Backup and Sync from Google</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.50.3166.0017</td></tr><tr><td class="Regular">Google Chrome</td><td class="Secondary">Google LLC</td><td class="Secondary">84.0.4147.135</td></tr><tr><td class="Regular">Intel(R) Processor Graphics</td><td class="Secondary">Intel Corporation</td><td class="Secondary">26.20.100.7325</td></tr><tr><td class="Regular">Kite</td><td class="Secondary">Manhattan Engineering Inc</td><td class="Secondary"></td></tr><tr><td class="Regular"><a href="http://go.microsoft.com/fwlink/?LinkID=223554">Microsoft OneDrive</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">20.134.0705.0008</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular"><a href="https://code.visualstudio.com/">Microsoft Visual Studio Code (User)</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">1.48.0</td></tr><tr><td class="Regular"><a href="http://photos.google.com/">Picasa 3</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.9</td></tr><tr><td class="Regular">PotPlayer</td><td class="Secondary">Kakao Corp.</td><td class="Secondary">200730</td></tr><tr><td class="Regular"><a href="https://www.jetbrains.com/products">PyCharm Community Edition 2020.1.2</a></td><td class="Secondary">JetBrains s.r.o.</td><td class="Secondary">201.7846.77</td></tr><tr><td class="Regular"><a href="http://www.python.org/">Python 3.8.3 (32-bit)</a></td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.3150.0</td></tr><tr><td class="Regular">Python Launcher</td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.7072.0</td></tr><tr><td class="Regular"><a href="http://www.sublimetext.com">Sublime Text 3</a></td><td class="Secondary">Sublime HQ Pty Ltd</td><td class="Secondary"></td></tr><tr><td class="Regular">Windows SDK AddOn</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.1.0.0</td></tr><tr><td class="Regular"><a href="https://community.bitnami.com">XAMPP</a></td><td class="Secondary">Bitnami</td><td class="Secondary">7.4.7-0</td></tr><tr><td class="Regular"><a href="https://zoom.us">Zoom</a></td><td class="Secondary">Zoom Video Communications, Inc.</td><td class="Secondary">5.1</td></tr></tbody></table><div class="Copyright">Monday, August 24, 2020 7:26 AM</div></div></body></html>
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<html><head><style>            div.header {                font-family: "Segoe UI Light","sans-serif";                font-size: 20.0pt;                color:#2A2A2A;                padding-bottom:34px;            }            a:link {                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#00749E;                text-decoration:none;            }            table tr.Header {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Regular {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Secondary {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#707070;                text-decoration:none;            }            div.Copyright {                padding-top:60px;                font-family: "Segoe UI SemiLight","sans-serif";                font-size: 11.0pt;                color:#2A2A2A;           }           div.NoList {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }        </style></head><title>Apps removed while resetting your PC</title><body leftmargin="60px" topmargin="50px"><div dir="ltr" lang="en-US"><div class="header">Apps removed while resetting your PC</div><table width="730px" border="1px" frame="void" rules="groups"><tr class="Header"><td width="60%" height="30px" valign="top">App name</td><td width="30%" height="30px" valign="top">Publisher</td><td width="10%" height="30px" valign="top">Version</td></tr><tbody><tr><td height="10px" colspan="3"/></tr><tr><td class="Regular">Adobe Creative Cloud</td><td class="Secondary">Adobe Systems Incorporated</td><td class="Secondary">5.2.1.441</td></tr><tr><td class="Regular">Atom</td><td class="Secondary">GitHub Inc.</td><td class="Secondary">1.50.0</td></tr><tr><td class="Regular"><a href="http://www.google.com">Backup and Sync from Google</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.50.3166.0017</td></tr><tr><td class="Regular">Google Chrome</td><td class="Secondary">Google LLC</td><td class="Secondary">84.0.4147.135</td></tr><tr><td class="Regular">Intel(R) Processor Graphics</td><td class="Secondary">Intel Corporation</td><td class="Secondary">26.20.100.7325</td></tr><tr><td class="Regular">Kite</td><td class="Secondary">Manhattan Engineering Inc</td><td class="Secondary"></td></tr><tr><td class="Regular"><a href="http://go.microsoft.com/fwlink/?LinkID=223554">Microsoft OneDrive</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">20.134.0705.0008</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular"><a href="https://code.visualstudio.com/">Microsoft Visual Studio Code (User)</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">1.48.0</td></tr><tr><td class="Regular"><a href="http://photos.google.com/">Picasa 3</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.9</td></tr><tr><td class="Regular">PotPlayer</td><td class="Secondary">Kakao Corp.</td><td class="Secondary">200730</td></tr><tr><td class="Regular"><a href="https://www.jetbrains.com/products">PyCharm Community Edition 2020.1.2</a></td><td class="Secondary">JetBrains s.r.o.</td><td class="Secondary">201.7846.77</td></tr><tr><td class="Regular"><a href="http://www.python.org/">Python 3.8.3 (32-bit)</a></td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.3150.0</td></tr><tr><td class="Regular">Python Launcher</td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.7072.0</td></tr><tr><td class="Regular"><a href="http://www.sublimetext.com">Sublime Text 3</a></td><td class="Secondary">Sublime HQ Pty Ltd</td><td class="Secondary"></td></tr><tr><td class="Regular">Windows SDK AddOn</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.1.0.0</td></tr><tr><td class="Regular"><a href="https://community.bitnami.com">XAMPP</a></td><td class="Secondary">Bitnami</td><td class="Secondary">7.4.7-0</td></tr><tr><td class="Regular"><a href="https://zoom.us">Zoom</a></td><td class="Secondary">Zoom Video Communications, Inc.</td><td class="Secondary">5.1</td></tr></tbody></table><div class="Copyright">Monday, August 24, 2020 7:26 AM</div></div></body></html>
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<html><head><style>            div.header {                font-family: "Segoe UI Light","sans-serif";                font-size: 20.0pt;                color:#2A2A2A;                padding-bottom:34px;            }            a:link {                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#00749E;                text-decoration:none;            }            table tr.Header {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Regular {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Secondary {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#707070;                text-decoration:none;            }            div.Copyright {                padding-top:60px;                font-family: "Segoe UI SemiLight","sans-serif";                font-size: 11.0pt;                color:#2A2A2A;           }           div.NoList {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }        </style></head><title>Apps removed while resetting your PC</title><body leftmargin="60px" topmargin="50px"><div dir="ltr" lang="en-US"><div class="header">Apps removed while resetting your PC</div><table width="730px" border="1px" frame="void" rules="groups"><tr class="Header"><td width="60%" height="30px" valign="top">App name</td><td width="30%" height="30px" valign="top">Publisher</td><td width="10%" height="30px" valign="top">Version</td></tr><tbody><tr><td height="10px" colspan="3"/></tr><tr><td class="Regular">Adobe Creative Cloud</td><td class="Secondary">Adobe Systems Incorporated</td><td class="Secondary">5.2.1.441</td></tr><tr><td class="Regular">Atom</td><td class="Secondary">GitHub Inc.</td><td class="Secondary">1.50.0</td></tr><tr><td class="Regular"><a href="http://www.google.com">Backup and Sync from Google</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.50.3166.0017</td></tr><tr><td class="Regular">Google Chrome</td><td class="Secondary">Google LLC</td><td class="Secondary">84.0.4147.135</td></tr><tr><td class="Regular">Intel(R) Processor Graphics</td><td class="Secondary">Intel Corporation</td><td class="Secondary">26.20.100.7325</td></tr><tr><td class="Regular">Kite</td><td class="Secondary">Manhattan Engineering Inc</td><td class="Secondary"></td></tr><tr><td class="Regular"><a href="http://go.microsoft.com/fwlink/?LinkID=223554">Microsoft OneDrive</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">20.134.0705.0008</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular"><a href="https://code.visualstudio.com/">Microsoft Visual Studio Code (User)</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">1.48.0</td></tr><tr><td class="Regular"><a href="http://photos.google.com/">Picasa 3</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.9</td></tr><tr><td class="Regular">PotPlayer</td><td class="Secondary">Kakao Corp.</td><td class="Secondary">200730</td></tr><tr><td class="Regular"><a href="https://www.jetbrains.com/products">PyCharm Community Edition 2020.1.2</a></td><td class="Secondary">JetBrains s.r.o.</td><td class="Secondary">201.7846.77</td></tr><tr><td class="Regular"><a href="http://www.python.org/">Python 3.8.3 (32-bit)</a></td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.3150.0</td></tr><tr><td class="Regular">Python Launcher</td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.7072.0</td></tr><tr><td class="Regular"><a href="http://www.sublimetext.com">Sublime Text 3</a></td><td class="Secondary">Sublime HQ Pty Ltd</td><td class="Secondary"></td></tr><tr><td class="Regular">Windows SDK AddOn</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.1.0.0</td></tr><tr><td class="Regular"><a href="https://community.bitnami.com">XAMPP</a></td><td class="Secondary">Bitnami</td><td class="Secondary">7.4.7-0</td></tr><tr><td class="Regular"><a href="https://zoom.us">Zoom</a></td><td class="Secondary">Zoom Video Communications, Inc.</td><td class="Secondary">5.1</td></tr></tbody></table><div class="Copyright">Monday, August 24, 2020 7:26 AM</div></div></body></html>
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<html><head><style>            div.header {                font-family: "Segoe UI Light","sans-serif";                font-size: 20.0pt;                color:#2A2A2A;                padding-bottom:34px;            }            a:link {                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#00749E;                text-decoration:none;            }            table tr.Header {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Regular {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }            table tr td.Secondary {                height:20px;                vertical-align:text-top;                font-family: "Segoe UI SemiLight","sans-serif";                font-size:11.0pt;                color:#707070;                text-decoration:none;            }            div.Copyright {                padding-top:60px;                font-family: "Segoe UI SemiLight","sans-serif";                font-size: 11.0pt;                color:#2A2A2A;           }           div.NoList {                font-family: "Segoe UI Semibold","sans-serif";                font-size:11.0pt;                color:#000000;                text-decoration:none;            }        </style></head><title>Apps removed while resetting your PC</title><body leftmargin="60px" topmargin="50px"><div dir="ltr" lang="en-US"><div class="header">Apps removed while resetting your PC</div><table width="730px" border="1px" frame="void" rules="groups"><tr class="Header"><td width="60%" height="30px" valign="top">App name</td><td width="30%" height="30px" valign="top">Publisher</td><td width="10%" height="30px" valign="top">Version</td></tr><tbody><tr><td height="10px" colspan="3"/></tr><tr><td class="Regular">Adobe Creative Cloud</td><td class="Secondary">Adobe Systems Incorporated</td><td class="Secondary">5.2.1.441</td></tr><tr><td class="Regular">Atom</td><td class="Secondary">GitHub Inc.</td><td class="Secondary">1.50.0</td></tr><tr><td class="Regular"><a href="http://www.google.com">Backup and Sync from Google</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.50.3166.0017</td></tr><tr><td class="Regular">Google Chrome</td><td class="Secondary">Google LLC</td><td class="Secondary">84.0.4147.135</td></tr><tr><td class="Regular">Intel(R) Processor Graphics</td><td class="Secondary">Intel Corporation</td><td class="Secondary">26.20.100.7325</td></tr><tr><td class="Regular">Kite</td><td class="Secondary">Manhattan Engineering Inc</td><td class="Secondary"></td></tr><tr><td class="Regular"><a href="http://go.microsoft.com/fwlink/?LinkID=223554">Microsoft OneDrive</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">20.134.0705.0008</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.0.40219</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">11.0.61030.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">12.0.40660.0</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular">Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.26.28720</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">14.26.28720.3</td></tr><tr><td class="Regular"><a href="https://code.visualstudio.com/">Microsoft Visual Studio Code (User)</a></td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">1.48.0</td></tr><tr><td class="Regular"><a href="http://photos.google.com/">Picasa 3</a></td><td class="Secondary">Google, Inc.</td><td class="Secondary">3.9</td></tr><tr><td class="Regular">PotPlayer</td><td class="Secondary">Kakao Corp.</td><td class="Secondary">200730</td></tr><tr><td class="Regular"><a href="https://www.jetbrains.com/products">PyCharm Community Edition 2020.1.2</a></td><td class="Secondary">JetBrains s.r.o.</td><td class="Secondary">201.7846.77</td></tr><tr><td class="Regular"><a href="http://www.python.org/">Python 3.8.3 (32-bit)</a></td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.3150.0</td></tr><tr><td class="Regular">Python Launcher</td><td class="Secondary">Python Software Foundation</td><td class="Secondary">3.8.7072.0</td></tr><tr><td class="Regular"><a href="http://www.sublimetext.com">Sublime Text 3</a></td><td class="Secondary">Sublime HQ Pty Ltd</td><td class="Secondary"></td></tr><tr><td class="Regular">Windows SDK AddOn</td><td class="Secondary">Microsoft Corporation</td><td class="Secondary">10.1.0.0</td></tr><tr><td class="Regular"><a href="https://community.bitnami.com">XAMPP</a></td><td class="Secondary">Bitnami</td><td class="Secondary">7.4.7-0</td></tr><tr><td class="Regular"><a href="https://zoom.us">Zoom</a></td><td class="Secondary">Zoom Video Communications, Inc.</td><td class="Secondary">5.1</td></tr></tbody></table><div class="Copyright">Monday, August 24, 2020 7:26 AM</div></div></body></html>
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
+from django import forms
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm
+from django.contrib.auth.models import User
+from App_Login.models import UserProfile
+
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+
+class UserProfileChange(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name', 'password')
+
+
+class ProfilePic(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['profile_pic',]
