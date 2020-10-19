@@ -1,19 +1,11 @@
-{% extends "Login_app/base.html" %}
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title_block %} Login {% endblock %}
 {% block body_block %}
-<h3 class="mt-3">Please Login:</h3>
-
-  <form action="{% url 'Login_app:user_login' %}" method="POST" class="mt-3">
-    <label for="username">Username:</label>
-    <input type="text" name="username" placeholder="Enter Username.." required> <br><br>
-    <label for="password">Password:</label>
-    <input type="password" name="password" placeholder="Enter Password" required><br><br>
-    {% csrf_token %}
-    <input type="submit" name="submit" value="Login" class="btn btn-primary btn-sm">
-  </form>
-
-
-
-
-
-
+<h2>Login:</h2>
+<form method="POST">
+  {{form|crispy}}
+  {% csrf_token %}
+  <button type="submit" class="btn btn-primary btn-sm mt-3"> Login </button>
+</form>
 {% endblock %}
