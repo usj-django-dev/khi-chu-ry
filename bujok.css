@@ -1,0 +1,322 @@
+
+
+
+*{margin:0px;
+ padding:0px;}
+.all {font-family:Arial; 
+	color:000;
+	background-repeat: repeat;
+	background-attachment: fixed;}
+
+from django.shortcuts import render
+from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
+from django.contrib.auth import login,authenticate,logout
+from django.shortcuts import HttpResponseRedirect
+from django.urls import reverse
+# Create your views here.
+
+
+def sign_up(request):
+    form = UserCreationForm()
+    registered = False
+    if request.method == 'POST':
+        form = UserCreationForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            registered = True
+    dict = {'form':form, 'registered':registered}
+    return render(request, 'App_Login/signup.html', context = dict)
+
+
+def login_page(request):
+    form = AuthenticationForm()
+    if request.method == 'POST':
+        form = AuthenticationForm(data=request.POST)
+        if form.is_valid():
+            username = form.clean_data.get('username')
+            password = form.clean_data.get('password')
+            user = authenticate(username=username,password=password)
+            if user is not None:
+                login(request,user)
+                return HttpResponseRedirect(reverse('index'))
+    return render(request,'App_Login/login.html',context={'form':form})
+
+
+.r{border: none;font-size: 8px; color: white; float: left;}
+
+
+.designer { align-content: center;
+			display: inline-block;
+			padding-top:} 
+
+.designer ul {display: inline-block;
+			  overflow: hidden; 
+	 		  list-style:none;  }
+
+.designer ul li { float:left;}
+
+.designer ul li a {height: 200px;
+				   border-radius: 10px auto;
+				   text-decoration:none;
+				   background:#cfcfcf;
+		 		   padding:10px; }
+
+.designer ul li a:hover{border-radius: 10px red; }
+
+
+.email{ width: 350px;height: 40px; }
+
+
+
+
+
+
+
+
+
+ padding:0px;}
+.all {font-family:Arial; 
+	color:000;
+	background-repeat: repeat;
+	background-attachment: fixed;}
+
+
+
+.r{border: none;font-size: 8px; color: white; float: left;}
+
+
+.designer { align-content: center;
+			display: inline-block;
+			padding-top:} 
+
+.designer ul {display: inline-block;
+			  overflow: hidden; 
+	 		  list-style:none;  }
+
+.designer ul li { float:left;}
+
+.designer ul li a {height: 200px;
+				   border-radius: 10px auto;
+				   text-decoration:none;
+				   background:#cfcfcf;
+		 		   padding:10px; }
+
+.designer ul li a:hover{border-radius: 10px red; }
+
+
+.email{ width: 350px;height: 40px; }
+
+ padding:0px;}
+.all {font-family:Arial; 
+	color:000;
+	background-repeat: repeat;
+	background-attachment: fixed;}
+
+
+
+.r{border: none;font-size: 8px; color: white; float: left;}
+
+
+.designer { align-content: center;
+			display: inline-block;
+			padding-top:} 
+
+.designer ul {display: inline-block;
+			  overflow: hidden; 
+	 		  list-style:none;  }
+
+.designer ul li { float:left;}
+
+.designer ul li a {height: 200px;
+				   border-radius: 10px auto;
+				   text-decoration:none;
+				   background:#cfcfcf;
+		 		   padding:10px; }
+
+.designer ul li a:hover{border-radius: 10px red; }
+
+
+.email{ width: 350px;height: 40px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.navigation-list{ list-style: none;
+				  text-decoration: none;
+				  padding: 0px;
+				  display: flex;
+				  flex-direction: row;}
+
+
+.navigation-item a {text-decoration: none; color: blue;}
+
+
+.navigation-iteam a:hover{color: #212529;}
+.navigation-iteam a:active{color: #212529;}
+
+.wsc p {width: 350px;font-size: 16px;
+		height: 30px;
+		margin: 80px 100px 20px 0px;  }
+
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.navigation-list{ list-style: none;
+				  text-decoration: none;
+				  margin-top: 10px;
+				  padding: 0px;
+				  display: flex;
+				  flex-direction: row;}
+
+
+.navigation-item a {text-decoration: none; color: blue;}
+.navigation-item li {margin-top: 50px;}
+
+
+.navigation-iteam a:hover{color: #212529;}
+.navigation-iteam a:active{color: #212529;}
+
+.wsa p {width: 350px;font-size: 16px;
+		height: 30px;
+		margin: 80px 100px 20px 0px;  }	
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.navigation-list{ list-style: none;
+				  text-decoration: none;
+				  margin-top: 10px;
+				  padding: 0px;
+				  display: flex;
+				  flex-direction: row;}
+
+
+.navigation-item a {text-decoration: none; color: blue;}
+.navigation-item li {margin-top: 50px;}
+
+
+.navigation-iteam a:hover{color: #212529;}
+.navigation-iteam a:active{color: #212529;}
+
+.wsb p {width: 350px;font-size: 16px;
+		height: 30px;
+		margin: 80px 100px 20px 0px;  }	
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wsab p {max-width: 200px;font-size: 18px;
+		max-height: auto;
+		margin: 100px 0px 0px 0px;  }		
+
+.zaxqa {padding:20px;} 
+
+.zaxqa ul{ float: left;
+		   margin:0px;
+		   padding:0px;
+		   
+		   margin-bottom: 50px;
+ 		   list-style:none;}
+
+.zaxqa ul li{ float: left;
+			  display:block;text-decoration:none; 
+			  border-bottom:1px solid #ded; }
+
+.zaxqa ul li a{ float: left; 
+	            display:block; 
+				text-decoration:none;
+				color:#716863;
+		 		padding:10px;}
+
+.zaxqa ul li a:hover{color:red;}		
+
+
+
+
+
+
+.joywq { /*float:right;width:25%;
+		height: 50px;*/}
+
+.wsabs p {max-width: 200px;font-size: 18px;
+		max-height: auto;
+		margin: 100px 0px 0px 0px;  }		
+
+.zaxqat {/* height:400px;*/ 
+	/*padding:20px; */
+	 /*  margin-top: 10px;*/ } 
+.zaxqat ul{ display: inline-block;
+			margin:10px 10px 10px 0px;
+		 padding:10px; 
+ 		 list-style:none;}
+.zaxqat ul li{display: inline-block;
+	border-bottom:1px solid black;}
+.zaxqat ul li a{ display:block; 
+			  text-decoration:none;
+			  /*background:black;*/
+	 		  color:#2189e5;
+	 		  padding:10px;}
+.zaxqat ul li a:hover{ color:black;
+					/*ackground-color:red;*/ }	
+
+
+
+
+
+.joywu { /*float:right;width:25%;
+		height: 50px;*/}
+
+.wsabc p {max-width: 200px;font-size: 18px;
+		max-height: auto;
+		margin: 100px 0px 0px 0px;  }		
+
+.zaxqaf { /*height:400px; */
+	/*padding:20px; */
+	   /*margin-top: 10px;*/ } 
+.zaxqaf ul{ display: inline-block;
+			margin:10px 10px 10px 0px;
+		 padding:10px; 
+ 		 list-style:none;}
+.zaxqaf ul li{display: inline-block;
+	border-bottom:1px solid black;}
+.zaxqaf ul li a{ display:block; 
+			  text-decoration:none;
+			  /*background:black;*/
+	 		  color:#2189e5;
+	 		  padding:10px;}
+.zaxqaf ul li a:hover{ color:black;
+					/*ackground-color:red;*/ }	
+	
+/*hover csss*/
+
+
