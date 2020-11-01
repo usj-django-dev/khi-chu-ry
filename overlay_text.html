@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js">
+  <link rel="stylesheet" type="text/css" href="Greece.css">
+<style>
+.c{
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 500px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/*.image:hover {
+  opacity: 0.3;}*/
+*{margin:0px;
+ padding:0px;}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right:  100%;
+  right: 0;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay:hover{
+   opacity: 0.8;
+
+}
+
+.c:hover .overlay {
+  width: 50%;
+  right: 0;
+}
+
+.text {
+  color: blue;
+  font-size: 30px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.text_1 {
+  color: #6c757d;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+
+.text_2 {
+  color: #6c757d;
+  font-size: 16px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-80%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<h2>Slide in Overlay from the Right</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="c">
+  <img src="image/cameraman_30.jpg" alt="Avatar" class="image">
+
+  <div class="overlay">
+
+    <div class="text font-weight-bold"> EXCLUSIVE TOUR TO MYKONOS ISLAND </div>
+    <div class="text_1 "> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+   
+      <p class="pt-3 "> 
+          Lorem ipsum dolor sit amet consectetur *
+      </p>
+     </div>
+    <div class="text_2 pt-3"> 
+        <div class="btn btn-md btn-primary"> Book Now </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
