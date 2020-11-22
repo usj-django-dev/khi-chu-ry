@@ -1,0 +1,129 @@
+*{margin:0px; padding:0px;}
+body
+{font-family:Arial;
+font-size:18px;
+font-weight:18px;
+color:000;
+background-color: #cccccc;
+background-repeat: repeat;
+background-attachment:fixed;}
+
+.all { width:100%;
+	   background:#ede;}
+
+.a {	background-color: #15c4a7;
+		width: 100%;
+  		height:600px;
+  		background-position: center;
+  		background-repeat: no-repeat;
+ 		background-size: cover;
+  		position: relative;
+  		margin-bottom:10px; }
+
+
+.menubar {	width: 100%;
+ 			height: 65px;
+ 			margin-top: 10px; 
+ 			background-color: #ffffff;}
+
+
+
+.ar p { float: left;
+		width: 15%; 
+		height: 65px;
+		display: inline-block; }
+
+.e { color: #9cb4b1;
+	 font-size: 36px;
+	 margin-left: 20%;
+	 margin-top: 10PX;}		
+
+
+
+.menu { float: right;
+		display: inline-block;
+		width: 55%;
+		height: 55px;  
+		position:absolute;
+	 	padding:0px;
+	 	margin-top: 10PX;
+	 	/*background-color: red;*/} 
+
+.menu ul{ margin:0px;
+		  padding:0px; 
+ 		  list-style:none;}
+
+.menu ul li{ float: left;
+			 border-right:90px solid white;}
+
+.menu ul li a{	display:block; 
+				text-decoration:none;
+				/*background:black;
+*/	 			/*color:#9cb4b1;*/
+	 			padding:10px;}
+.menu ul li a:hover{ color:green;
+					 /*background-color:042E0B;*/}
+
+
+
+.na p {color: white;
+		font-size: 50px;
+		text-align: center;
+		margin: 100px 100px 10px 80px;}					 
+
+
+.an p {color: white;
+		font-size: 25px;
+		text-align: center;
+		margin: 20px 100px 100px 80px;
+		line-height: 30px;}		
+
+
+
+.bn { 	float: left;
+		width: 50%;
+		height: 100px;}	
+.bn button { float: right;
+			 width: 100px; 
+			 height: 50px;
+			 background-color: blue; }	
+
+
+
+
+.bm { float:right;
+	  width: 50%;
+	  height: 100px;}	
+.bm button { float: left;
+			 width: 100px; 
+			 height: 50px;
+			 background-color: red;}	
+
+
+
+.sec {  width: 100%;
+		height: 500px; }	
+	 
+.vou p { color: #606060;
+		 text-align: center;
+		 width:100%;
+		 height: 80px;
+		 font-size: 40px; 
+		 margin: 50px 0px 0px 0px;}
+
+
+.ga p { color: #9cb4b1;
+		font-size: 16px;
+		text-align: center;
+		margin: 0px 120px 20px 120px; }
+
+.gb p { color: #9cb4b1;
+		font-size: 16px;
+		text-align: center;
+		margin: 20px 120px 20px 120px;  }	
+
+
+.im { /*width: 100%;*/ text-align: center;
+	  height: 200px;
+	  margin: 50px 120px 50px 120px;
+	}					 
