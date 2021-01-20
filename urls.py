@@ -1,18 +1,9 @@
-from django.contrib import admin
-from django.urls import path, include
-from . import views
-from django.conf import settings
-from django.contrib.staticfiles.urls import static, staticfiles_urlpatterns
+from django.urls import path
+from App_Blog import views
+app_name = 'App_Blog'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('account/', include('App_Login.urls')),
-    path('blog/', include('App_Blog.urls')),
-    path('', views.index, name='index'),
+    path('',views.blog_list, name='blog_list'),
+    path('write/',views.CreateBlog.as_view(), name='create_blog'),
+
 ]
-
-
-
-
-urlpatterns += staticfiles_urlpatterns()
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
