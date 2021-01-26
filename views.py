@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.urls import reverse
-from django.shortcuts import HttpResponseRedirect
+from django.shortcuts import HttpResponse
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
-
-def index(request):
-    return HttpResponseRedirect(reverse('App_Blog:blog_list'))
+@login_required
+def home(request):
+    return HttpResponse("Homepage")
