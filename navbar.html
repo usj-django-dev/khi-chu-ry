@@ -1,297 +1,335 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>navbar</title>
-	<link rel="stylesheet" type="text/css" href="Greece.css">
+	<title>Navbar</title>
+	<link rel="stylesheet" type="text/css" href="navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">							
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js">
-	<style>
-		.carousel-inner img {width: 100%;height: 100%;}
-		#main{ padding-bottom: 100px; }
-		.overlay{
-				    position: absolute;
-					top: 41%;
-					left: 50%;
-					background-color: rgba(0,123,255,0.8);
-					height: 78%;
-					width: 90%;
-					opacity: 0;
-					transition: .75s ease;}
-
-		.ctr{	position: absolute;
-				transform: translate(-50%, -50%);
-				-webkit-transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				-moz-transform: translate(-50%, -50%);
-				text-align: center;padding-top: 27%;}
-
-		.img_hover:hover .overlay {opacity:1;}
-		.circle-icon {
-					    background: #cdcdcd;
-					    padding:10px;margin-left: 10px;
-					    border-radius: 50%;
-					}
-
-		.navigation-list{ list-style: none;
-				  text-decoration: none;
-				  margin: 0px;
-				  padding: 0px;
-				  display: flex;
-				  flex-direction: row;}
-
-
-.navigation-item a {text-decoration: none; color: black;}
-
-
-.navigation-iteam a:hover{color: #fa923f;}
-.navigation-iteam a:active{color: #fa923f;}	
-.menubar { width: 100%;
-	 height: 80px;
-	 background-color: black;
-	 box-shadow: transparent;color: white;}
-
-.left-side { float: left;
-	 width: 50%; 
-	 height: 80px;
-	/* background-color: white; */}
-
-.left-side p { font-size: 36px;
-			 color:white;margin-left: 90px; margin-top: 20px;
-			 }
-
-
-.right-side { float: right; 
-	 width: 50%;
-	 height: 80px;
-	 /*background-color: black;*/}	 
-
-.menu {position:absolute;
-	   /* bottom:425px;*/
-		padding:20px; margin-left: 5px;
-		/*box-shadow:5px 8px 7px #888888;*/} 
-.menu ul{margin:0px;
-		 padding:0px; 
- 		 list-style:none;}
-.menu ul li{ float:left;
-			 border-right:70px solid black;}
-.menu ul li a{	display:block; 
-				text-decoration:none;
-				 background:black;
-	 			color:white;
-	 			padding:10px;}
-.menu ul li a:hover{color:green;background-color:042E0B;}
-
-
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<style type="text/css">
+		.navbar-nav {float: none; text-align: center;}
+		.navbar-nav li {float: none; display: inline-block;}
 	</style>
-
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar navbar-default navbar-static-top custom-carets " role="navigation">
+		<div class="container-fluid" style="max-width: 1000px;">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Logo</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
 
-	<div class="menubar">
-				<div class="left-side"> 
-					<P> <strong> ORANGE<SPAN style="color:#BBD60E;">BOND</SPAN></strong>  
-					</P>
-
-				</div>
-				<div class="right-side">
-					<div class="menu">
-							<ul> 
-								<li> <a href=""> Home	</a> </li>
-								<li> <a href=""> About	</a> </li>
-								<li> <a href=""> Portfolio </a> </li>
-								<li> <a href=""> Blog     </a> </li>
-								<li> <a href=""> Contact</a> </li>
-							</ul>
-					</div>
-				</div>
+			<div class=" collapse navbar-collapse" id="navbarSupportedContent">
 				
-
-
+				    <ul class=" nav navbar-nav collapse navbar-collapse ">
+					   
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          HOME
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          ABOUT US
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          SERVICE
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					         OPERATIONS
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					   
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          INVISITOR
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          BLOG
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          PAGES
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          SHOP
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					         CONTACT US
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					    </li>
+					    
+				    </ul>
+				    <!-- <form class="form-inline my-2 my-lg-0">
+				      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				    </form> -->
 			</div>
 
 
+		</div>
+</nav>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img   style="width: 100%; height: 500px;" src="default.jpg">
+<div style="background-color: #202e39;" class="pt-5">
+	<p class="COMPANY "> WELCOME TO OUR COMPANY </p>
+	<p class="text-secondary text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua </p>
+</div>
+<img   style="width: 100%;" src="default.jpg">
 
 <section>
-		<div style="background-color: #f3f3f3;">
-			<div class="container" style="max-width: 1300px;">
-				<div class="row" >
+	<div style="background-color:#202e39; ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-danger"> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-success"> 
+					<p class="title" > <span class="number">01.</span> OUR HISTORY</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-dark"> 
+					<p class="title" > <span class="number">02.</span> OUR COMPABILITY</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
+				</div>
 				
-					<div class="col bg-dark"> 
-						
-						<div style="margin-bottom: 50px;">
-							<div class="wsc"> <strong><p>CONTACT</p></strong> </div>
-								<div class="mt-3"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor  consectetur adipisicing elit</p></div> 
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fas fa-mobile-alt text-primary mr-3" ></i> </a> </li>
-									<li class="navigation-item"> +880 017-39150599</li>
-								</ul>
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""><i class="fas fa-envelope text-primary mr-3"></i> </a> </li>
-									<li class="navigation-item"> utsho233@gmail.com  </li>
-								</ul>
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fas fa-map-marker-alt text-primary mr-3"></i> </a> </li>
-									<li class="navigation-item">  15/1 Monirampur Maharastra,India  </li>
-								</ul>
+				<!-- <div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-secondary"> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+				</div> -->
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-light"> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-primary"> 
+					<p class="title" > <span class="number">03.</span> OUR MISSION</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
+				</div>
+				<!-- <div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-primary"> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+				</div> -->
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-info"> 
+					<p class="title" > <span class="number">04.</span> OUR VALUES</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
+				</div>
+				<!-- <div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-danger"> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+				</div> -->
+			</div>
+		</div>
+	</div>
+	
+</section>
 
-						
-						</div>
-					</div>
 
 
-					<div class="col bg-secondary"> 
-						<div style="margin-bottom: 50px;">
-							<div class="wsa  "> <strong><p>RECENT TWEETS</p></strong> </div>
-							
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fab fa-twitter text-primary mr-3 "></i> </a> </li>
-									<li class="navigation-item"> <a href=""> @hoesneyara69 </a> Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed consectetur  </li>
-								</ul>
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fab fa-twitter text-primary mr-3 "></i> </a> </li>
-									<li class="navigation-item"> <a href=""> @commit2design </a> Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed consectetur  </li>
-								</ul>
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fab fa-twitter text-primary mr-3 "></i> </a> </li>
-									<li class="navigation-item"> <a href=""> @iamusj </a> Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed consectetur adipisicing elit </li>
-								</ul>	
-						</div>	
-					</div>
-					
 
-					<div class="col bg-danger"> 
-						<div style="margin-bottom: 50px;">
-							<div class="wsb  "> <strong><p>RECENT POST</p></strong> </div>
-							
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fas fa-comment text-primary mr-3"></i> </a> </li>
-									<li class="navigation-item"> How to get ready for your honey moon trip? <br><a href=""> Read more....</a></li> 
-								</ul>
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fas fa-comment text-primary mr-3"></i> </a> </li>
-									<li class="navigation-item"> 5 tips to plan for the best summer vacation in Greece.<a href=""> Read more...</a></li>
-								</ul>
-								<ul class="navigation-list"> 
-									<li class="navigation-item"> <a href=""> <i class="fas fa-comment text-primary mr-3"></i></a> </li>
-									<li class="navigation-item">  Are you a nature lover?Here are the top destinations you should visit. <a href=""> Read more.... </a></li>
-								</ul>	
-						</div>	
-					</div>
+<img   style="width: 100%;" src="default.jpg">
+
+<div style="background-color: #202e39;">
+	<p class="COMPANY pt-5"> WELCOME TO OUR COMPANY </p>
+	<p class="text-secondary text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua </p>
+
+
+
+
+		<div class="container pb-5">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-danger"> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-success"> 
+					<p class="title" > <span class="number">01.</span> OUR HISTORY</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-dark"> 
+					<p class="title" > <span class="number">02.</span> OUR COMPABILITY</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
+				</div>
 			
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-light"> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-primary"> 
+					<p class="title" > <span class="number">03.</span> OUR MISSION</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12 bg-info"> 
+					<p class="title" > <span class="number">04.</span> OUR VALUES</p>
+					<p class="text-secondary" style="line-height: 26px;">
+						Lorem ipsum dolor sit amet, consec tetur adipisi cing elit, sed do eiusmod
+						tempor incidi unt ut labore et dolore magna aliqua.
+					</p>
+					  
 				</div>
 			</div>
 		</div>
-	</section>
-
-
-
-
-
-
-<div class="container">
-    <h4>Columns with defined-width (classic grid)</h4>
-    <div class="row justify-content-center">
-        <div class="col-sm-2">
-            <div class="card  ">
-                <div class="card-body">
-                    <h3 class="card-title">1</h3>
-                    <p class="card-text">With supporting text below..</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card card-dark bg-dark">
-                <div class="card-body">
-                    <h3 class="card-title">2</h3>
-                    <p class="card-text">With supporting text below..</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card card-dark bg-dark">
-                <div class="card-body">
-                    <h3 class="card-title">3</h3>
-                    <p class="card-text">With supporting text below..</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card card-dark bg-dark">
-                <div class="card-body">
-                    <h3 class="card-title">4</h3>
-                    <p class="card-text">With supporting text below..</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card card-dark bg-dark">
-                <div class="card-body">
-                    <h3 class="card-title">5</h3>
-                    <p class="card-text">With supporting text below..</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+	
 
 
 
 
 
 
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+<img   style="width: 100%;" src="default.jpg">
+
+<img   style="width: 100%;" src="default.jpg">
+
+<img   style="width: 100%;" src="default.jpg">
+
+<img   style="width: 100%;" src="default.jpg">
+v
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
