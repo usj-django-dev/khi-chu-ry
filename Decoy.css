@@ -9,12 +9,18 @@
 	background-attachment: fixed;}
 
 
+
+
+
+
+
 .navigation-list{ list-style: none;
 				  text-decoration: none;
 				  margin: 0px;
 				  padding: 0px;
 				  display:inline-block;
 				  }
+
 
 .navigation-item  {text-decoration: none;display:inline-block; }
 
@@ -37,6 +43,16 @@
 .picture ul li a:hover{color:white;}	
 
 
+
+
+
+
+
+
+
+
+
+
 .menu { 
 		display: inline-block; } 
 
@@ -51,6 +67,9 @@
 	 		  font-size:14px;}
 	 		  
 .menu ul li a:hover{ color:white;}	
+
+
+
 
 .icon { margin-top: 50px; } 
 
@@ -103,5 +122,9 @@
 	 		 
 	 		  font-size:14px;}
 .email ul li a:hover{ color:white;}	
+
+
+
+
 
 
