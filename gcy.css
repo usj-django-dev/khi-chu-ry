@@ -1,0 +1,100 @@
+*{margin:0px;
+ padding:0px;}
+.all {font-family:Arial; 
+	color:000;
+	background-repeat: repeat;
+	background-attachment: fixed;}
+
+
+.designer { align-content: center;
+			display: inline-block;
+			padding-top:} 
+
+.designer ul {display: inline-block;
+			  overflow: hidden; 
+	 		  list-style:none;  }
+
+.designer ul li { float:left;}
+
+.designer ul li a {height: 200px;
+				   border-radius: 10px auto;
+				   text-decoration:none;
+				   background:#cfcfcf;
+		 		   padding:10px; }
+
+.designer ul li a:hover{border-radius: 10px red; }
+
+
+
+
+
+
+
+
+.joyw { float:right;/*width:25%;
+		height: 50px;*/}
+
+.wsab p {width: 200px;font-size: 25px;
+		height: 30px;color: white;
+		margin: 0px 100px 15px 30px;  }		
+
+.zaxqa {/* height:400px;*/ 
+	padding:20px; 
+	   margin-left: 40px; } 
+.zaxqa ul{ margin:10px;
+		 padding:10px; 
+ 		 list-style:none;}
+.zaxqa ul li{border-bottom:1px solid black;}
+.zaxqa ul li a{ display:block; 
+			  text-decoration:none;
+			  /*background:black;*/
+	 		  color:#716863;
+	 		  padding:10px;}
+.zaxqa ul li a:hover{ color:white;
+					/*ackground-color:red;*/ }		
+
+
+.joyw { float:right;/*width:25%;
+		height: 50px;*/}
+
+.wsab p {width: 200px;font-size: 25px;
+		height: 30px;color: white;
+		margin: 0px 100px 15px 30px;  }		
+
+.zaxqa {/* height:400px;*/ 
+	padding:20px; 
+	   margin-left: 40px; } 
+.zaxqa ul{ margin:10px;
+		 padding:10px; 
+ 		 list-style:none;}
+.zaxqa ul li{border-bottom:1px solid black;}
+.zaxqa ul li a{ display:block; 
+			  text-decoration:none;
+			  /*background:black;*/
+	 		  color:#716863;
+	 		  padding:10px;}
+.zaxqa ul li a:hover{ color:white;
+					/*ackground-color:red;*/ }		
+
+
+.joyw { float:right;/*width:25%;
+		height: 50px;*/}
+
+.wsab p {width: 200px;font-size: 25px;
+		height: 30px;color: white;
+		margin: 0px 100px 15px 30px;  }		
+
+.zaxqa {/* height:400px;*/ 
+	padding:20px; 
+	   margin-left: 40px; } 
+.zaxqa ul{ margin:10px;
+		 padding:10px; 
+ 		 list-style:none;}
+.zaxqa ul li{border-bottom:1px solid black;}
+.zaxqa ul li a{ display:block; 
+			  text-decoration:none;
+			  /*background:black;*/
+	 		  color:#716863;
+	 		  padding:10px;}
+.zaxqa ul li a:hover{ color:white;
+					/*ackground-color:red;*/ }		
