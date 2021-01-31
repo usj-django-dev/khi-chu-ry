@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/*.image:hover {
+  opacity: 0.3;}*/
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right:  100%;
+  right: 0;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay:hover{
+   opacity: 0.8;
+
+}
+
+.container:hover .overlay {
+  width: 50%;
+  right: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.h1 {
+  color: blue;
+}
+.h1 svg {
+  fill: currentColor;
+}
+
+.h1 {
+  color: blue;
+  fill: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<!-- 
+<h2>Slide in Overlay from the Right</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="image/bot.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+ -->
+
+<h1>
+  <svg viewBox="0 0 32 32">
+    <use xlink:href="#icon-phone"></use>
+  </svg>
+  You'd think the SVG would fill blue too?
+</h1>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
