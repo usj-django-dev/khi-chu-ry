@@ -1,104 +1,149 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/png" href="img/arpita.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Hi there </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>index</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrasp/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrasp/css/bootstrap.min.css">
+	
+	
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<style>
+	  .carousel-inner img {
+	    width: 100%;
+	    height: 100%;
+	  }
+	  </style>
+	
 </head>
-
 <body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			
+		    <a class="navbar-brand" href="#">Navbar</a>
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded= "false" aria-label="Toggle navigation">
+		    	  <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav"++++>
+		    <ul class="navbar-nav text-center ml-auto">
+			      <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+			      <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+			      <li class="nav-item"><a class="nav-link" href="#">Pricing</a> </li>
+			      <li class="nav-item dropdown">
+			      	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Dropdown
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="#">Action</a>
+			          <a class="dropdown-item" href="#">Another action</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something more</a>
+			          <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			      </li>
+		    </ul>
+		  
+		    </div>
+		</nav>
 
-    <!-- This is banner section -->
-    <section class="banner-container container-fluid">
-        <div class="row vh-100">
-            <div class="col-md-9 banner-column m-auto text-white text-center p-4 border border-light">
-                <h1 class="display-4 font-weight-bolder "> Utsho Sadhak Joy</h1>
-                <h3>Designer, Developer & Python lover </h3>
-            </div>
-        </div>
-    </section>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+			  <ul class="carousel-indicators">
+			    <li data-target="#demo" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo" data-slide-to="1"></li>
+			    <li data-target="#demo" data-slide-to="2"></li>
+			  </ul>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="image/Cologne.jpg" alt="Cologne" width="1100" height="500">
+			      <div class="carousel-caption">
+			        <h3>Cologne</h3>
+			        <p>We had such a great time in LA!</p>
+			      </div>   
+			    </div>
+			    <div class="carousel-item">
+			      <img src="image/Fotorama-jQuery-image-slider.jpg" alt="Fotorama" width="1100" height="500">
+			      <div class="carousel-caption">
+			        <h3>Fotorama</h3>
+			        <p>Thank you, Chicago!</p>
+			      </div>   
+			    </div>
+			    <div class="carousel-item">
+			      <img src="image/Eye.jpg" alt="Jssor" width="1100" height="500">
+			      <div class="carousel-caption">
+			        <h3>Jssor-jquery</h3>
+			        <p>We love the Big Apple!</p>
+			      </div>   
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </a>
+			</div>
+		</header>
+
+	<div class="container">
+		
+
+		<h4>Starting Bootstrap</h4>
+
+		<button class="btn btn-outline-success">Subscribe</button>
+		<!-- <img class="img-thumbnail" style="margin-top: 50px;" src="form-design.jpg"> -->
+
+		<div class="card" style="width: 18rem;">
+  			<img src="form-design.jpg" class="card-img-top" alt="cart-image">
+  			<div class="card-body">
+    			<h5 class="card-title">Apple Laptop</h5>
+    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			<a href="#" class="btn btn-primary">Add To Cart</a>
+  			</div>
+		</div>
+					
+	</div>
+	<div class="row bg-warning">
+		<div class="col-md-9">
+			<p class="ml-5 bg-success">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+		<div class="col-md-3 text-primary bg-danger">
+			<p class="text-capitalize ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		</div>
+		
+	</div>
+	<hr>
+
+	<div class="container w-50">
+		<h3 class="text-center bg-warning">A New Form</h3>
+		<form>
+		  <div class="form-group">
+		    <label for="user">User Name</label>
+		    <input type="text" name="user" class="form-control" id="InputUser" >  
+		  </div><div class="form-group">
+		    <label for="emailjoy">Email address</label>
+		    <input type="email" name="email" class="form-control" id="InputEmail1" >  
+		  </div>
+		  <div class="form-group">
+		    <label for="InputPassword1">Password</label>
+		    <input type="password" class="form-control" id="InputPassword1">
+		  </div>
+		  <div class="form-group form-check">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		  </div>
+		  <div class="form-group">
+		  	<label>Text Area</label>
+		  	<textarea class="form-control"></textarea>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<br><br>
+	</div>
 
 
-    <!-- This is navbar section -->
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-container">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#About">ABOUT <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Education">EDUCATION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Project">PROJECT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Portfolio">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Gallery">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">CONTACT</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-    </section>
-
-    <!-- This is about section -->
-
-    <section>
-        <div class="about-container">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-9 py-5 text-white">
-                        <h3> Utsho Sadhak Joy </h3>
-                        <p> Designer, Developer & Python lover </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse repellendus nisi, quo
-                            quaerat possimus nihil, atque natus nam quae eligendi at et mollitia libero nemo maxime
-                            sequi illum iusto cupiditate explicabo fuga, delectus nulla sit eius? Magni dolor, rerum sed
-                            ducimus ipsam maiores eveniet recusandae. Odio officia aspernatur est.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente aliquid ex ipsum
-                            adipisci pariatur recusandae hic quasi odit magni officia cum eligendi natus fugit
-                            reiciendis ducimus vitae dolore modi ullam, totam cumque! Similique eos sequi ex velit quod
-                            id? Deleniti, iste! Ab cum pariatur, minus repellendus tempora eaque aliquid!
-                        </p>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex reprehenderit, odit
-                            consequuntur alias id fugit et aut voluptas enim ad tenetur porro molestias repellendus.
-                            Magni repudiandae officia dignissimos error voluptatibus facilis tenetur deserunt quos modi
-                            iure.
-                        </p>
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="img/mi_imges.png" alt="joy" class="img-fluid rounded-circle border border-light ">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
@@ -106,24 +151,7 @@
 
 
 
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+	<script type="text/javascript" src="bootstrasp/js/bootstrap.js"></script>
+	<script type="text/javascript" src="bootstrasp/js/bootstrap.min.js"></script>
 </body>
-
 </html>
