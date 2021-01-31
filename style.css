@@ -1,5 +1,19 @@
 *{margin:0px;padding:0px;}
-body{font-family:Arial;font-size:14px;color:#0000ff;background:yellow;}
-.joy{overflow:hidden;}
-.main{width:1280px; margin:0 auto;background:green;}
-.footer{background:black; padding:17px;text-align:center;color:white;}
+body{font-family:Arial;font-size:14px;font-weight:20px;color:#000;}
+.main{width:1400px;margin :10px auto;display:block;overflow:hidden;}
+.header img{width:1400px;height: 225px;}
+.mainmenu{overflow:hidden;}
+.mainmenu ul{margin:0px;pading:0px;list-style:none;}
+.mainmenu ul li{float:left;border-right:1px solid #ede}
+.mainmenu ul li a{display:block;text-decoration:none;background:skyblue;color:black;padding:25px;}
+.mainmenu ul li a:hover{background:#ddd}
+.slider img{width:1400px}
+.maincontent{overflow:hidden;}
+.maincontent h2{margin-bottom:7px;margin-top:3px;}
+.content{float:left;width:900px;margin-right:30px;}
+.sidebar{float:right;width:470px}
+.sidebar ol{margin:0px;padding:0px;}
+.sidebar ol li{border-bottom:1px solid #ded}
+.sidebar ol li a{display:block;text-decoration:none;background:lime;color:black;padding:10px;}
+.sidebar ol li a:hover{background:#ddd}
+.footer{background:blue;padding:20px;text-align:center;margin-top:2px;}
