@@ -1,174 +1,144 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Green Age - Free Website Template</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<!--
-Template 2031 Green Age
-http://www.tooplate.com/view/2031-green-age
--->
-<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.48-22 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
 
-<script language="javascript" type="text/javascript">
-function clearText(field)
-{
-    if (field.defaultValue == field.value) field.value = '';
-    else if (field.value == '') field.value = field.defaultValue;
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
 }
-</script>
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
 
-<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
 
-<script type="text/javascript">
-$(window).load(function() {
-	$('#slider').nivoSlider({
-		effect:'random',
-		slices:10,
-		animSpeed:500,
-		pauseTime:2200,
-		startSlide:0, //Set starting Slide (0 index)
-		directionNav:false,
-		directionNavHide:false, //Only show on hover
-		controlNav:false, //1,2,3...
-		controlNavThumbs:false, //Use thumbnails for Control Nav
-		pauseOnHover:true, //Stop animation while hovering
-		manualAdvance:false, //Force manual transitions
-		captionOpacity:0.8, //Universal caption opacity
-		beforeChange: function(){},
-		afterChange: function(){},
-		slideshowEnd: function(){} //Triggers after all slides have been shown
-	});
-});
-</script>
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
 
 </head>
-<body class="homepage">
 
-<div id="tooplate_wrapper">
-	<div id="tooplate_header">
-    	
-        <div id="site_title"><h1><a href="#">Green Age</a></h1></div>
-        
-        <div class="cleaner"></div>
-    </div>
-    
-    <div id="tooplate_menu">
-        <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li class="last"><a href="contact.html">Contact</a></li>
-        </ul>    	
-        
-        <div id="search_box">
-            <form action="#" method="get">
-                <input type="text" value="Search" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
-                <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
-            </form>
-        </div>
-		
-        <div class="cleaner"></div>
-    </div> <!-- end of tooplate_menu -->
-    
-    <div id="tooplate_middle">
-    
-        <div id="slider">
-            <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1" title="Suspendisse quis velit ac nisl ultrices tristique a eu velit." /></a>
-            <a href="#"><img src="images/slideshow/02.jpg" alt="nature 2" title="Fusce eget tellus eget felis ultrices volutpat et vitae mauris." /></a>
-            <a href="#"><img src="images/slideshow/03.jpg" alt="nature 3" title="Duis non est nec dui tincidunt pulvinar lacinia vel quam." /></a>
-            <a href="#"><img src="images/slideshow/04.jpg" alt="nature 4" title="Phasellus in orci eget neque tristique semper ut ac lacus." /></a>
-        </div>
-	</div>
-        
-    <div id="tooplate_main">
-    	
-        <div class="col_w960">
-        	<h2>Welcome to Green Age</h2>
-            <div class="col_w450 float_l">
-                <div class="wwd_box">
-                	<img src="images/icon1.png" alt="Work One" />
-                    <h3><a href="#">Download Free Templates</a></h3>
-                    <p>Green Age is a free <a href="http://www.tooplate.com" target="_parent">website template</a> for everyone. You may edit and apply this template for any purpose.</p>
-                     <a href="#" class="more float_r">More</a>
-                    <div class="cleaner"></div>
-                </div>
-				
-                <div class="wwd_box">
-                	<img src="images/icon2.png" alt="Work One" />
-                    <h3><a href="#">Aenean Quis Nulla ac Nisl Rutrum</a></h3>
-                     <p>Cras scelerisque ligula id mi suscipit, sed fringilla ipsum blandit. Sed dictum ante tellus, tristique luctus dolor porttitor at. Morbi vel tempor enim.</p>
-                     <a href="#" class="more float_r">More</a>
-                  <div class="cleaner"></div>
-                </div>
-            </div>
-            
-            <div class="col_w450 float_r">
-              	<div class="wwd_box">
-                	<img src="images/icon3.png" alt="Work One" />
-                    <h3><a href="#">Online Marketing</a></h3>
-                    <p>Sed et eros ac mauris suscipit viverra. Sed et eros ac mauris suscipit viverra. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>
-                     <a href="#" class="more float_r">More</a>
-                    <div class="cleaner"></div>
-                </div>
-				
-                <div class="wwd_box">
-                	<img src="images/icon4.png" alt="Work One" />
-                    <h3><a href="#">Praesent Dui Nibh Eleifend Lobortis</a></h3>
-                    <p>Suspendisse ligula massa, cursus eget nunc sed, interdum cursus eros. Credit goes to <a href="http://unsplash.com" rel="nofollow">Unsplash</a> for photos used in homepage slider.</p>
-                     <a href="#" class="more float_r">More</a>
-                  <div class="cleaner"></div>
-                </div>
-            </div>
-            
-            <div class="cleaner"></div>
-		</div>
-    
-    	<div class="col_w960 col_w960_last">
-        	<h2>Latest Projects</h2>
-            <div class="lp_box">
-                <h6>Nullam ut neque neque</h6>
-                <a href="#"><img src="images/tooplate_image_01.jpg" alt="Image 01" /></a>
-                <p>Etiam ut nibh et urna cursus ultricies nec vel nunc. In hac habitasse platea dictumst.</p>
-                <a href="#" class="more float_r">More</a>
-                    <div class="cleaner"></div>
-        	</div>
-			
-            <div class="lp_box">
-                <h6>Sed aliquam mauris</h6>
-                <a href="#"><img src="images/tooplate_image_02.jpg" alt="Image 02" /></a>
-              	<p>Donec ullamcorper feugiat nunc ut tempus. Sed sodales, nibh ut ultricies pulvinar.</p>
-                <a href="#" class="more float_r">More</a>
-                    <div class="cleaner"></div>
-        	</div>
-			
-			<div class="lp_box lp_box_last">
-                <h6>Aliquam aliquet sem</h6>
-                <a href="#"><img src="images/tooplate_image_03.jpg" alt="Image 03" /></a>
-				<p>Praesent auctor quam quis libero venenatis dapibus. Donec ullamcorper   feugiat nunc ut tempus.</p>
-                <a href="#" class="more float_r">More</a>
-                <div class="cleaner"></div>
-            </div>
-			
-            <div class="cleaner"></div>
-        </div>
-        
-        <div class="cleaner"></div>
-    </div> <!-- end of main -->
-        
-</div> <!-- end of wrapper -->
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
 
-<div id="tooplate_cr_wrapper">
-	<div id="tooplate_cr">
-    	
-        Copyright © 2048 <a href="#">Company Name</a> - Design: <a href="http://www.tooplate.com">tooplate</a>
-        
-    </div> <!-- end of footer wrapper -->
-</div> <!-- end of footer -->
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="sandbox-apollotheme-com.3dcartstores.com/index.html">
+						Welcome to ApolloTheme  - ApolloTheme
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.48-22 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=sandbox-apollotheme-com.3dcartstores.com/index.html">
+
+
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
 
 </body>
+
 </html>
+
+
