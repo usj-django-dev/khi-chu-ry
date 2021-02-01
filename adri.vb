@@ -47,15 +47,6 @@ testStr = Format(334.9, "###0.00")
 ' Returns "500.00%".
 testStr = Format(5, "0.00%")
 
-Dim testDateTime As Date = #1/27/2001 5:04:23 PM#
-Dim testStr As String
-' Returns current system time in the system-defined long time format.
-testStr = Format(Now(), "Long Time")
-' Returns current system date in the system-defined long date format.
-testStr = Format(Now(), "Long Date")
-' Also returns current system date in the system-defined long date 
-' format, using the single letter code for the format.
-testStr = Format(Now(), "D")
 
 ' Returns the value of testDateTime in user-defined date/time formats.
 ' Returns "5:4:23".
