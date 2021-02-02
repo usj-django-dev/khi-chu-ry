@@ -1,0 +1,115 @@
+h2 {
+	text-align: center;
+}
+p.border1 {
+	/* border-style: ; */
+	/* border-width: ; */
+	/* border-color: ; */
+	display: inline-block;width: 300px;
+	border: 10px solid pink;
+}
+.border2 {display: inline-block;
+	border-bottom: 5px solid red;
+	border-left: 10px solid green;display: inline-block;width: 400px;
+}
+p.radius {
+	border: 5px solid rgba(142, 68, 173,1.0);
+	border-radius: 10px;display: inline-block;width: 500px;
+}
+
+/* margin-top / margin-bottom / margin-right / margin-left */
+div.margin {
+	border: 20px solid green;
+	/* margin-top: ; */
+	/* margin-left: ; */display: inline-block;width: 300px;
+	/* margin-right: ; */
+	/* margin-bottom: ;   */
+	
+	margin: 50px 100px;
+}
+.pd {
+	border: 1px solid black;
+	padding: 20px 50px 40px;
+}
+
+/*box model */
+
+.box {
+	width: 300px;
+	padding: 0 20px;
+	border: 2px solid purple; display: inline-block;width: 300px;
+}
+.box2 {
+	width: 300px;
+	padding: 0 20px;
+	border: 2px solid orange;
+	box-sizing: border-box;display: inline-block;width: 300px;
+}
+.para {
+	border: 5px solid blue;
+	border-radius: 4px;display: inline-block;width: 300px;
+}
+.margin-top {
+	margin-top: 200px;
+}
+
+div.text {
+	color: green;
+	background-color: yellow;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+.justify {
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+/* text-decoration: none / underline / overline / line-through */
+.decoration {
+	text-decoration: line-through;
+}
+a {
+	text-decoration: none;
+}
+
+/* text-transform: uppercase / lowercase / capitalize */
+
+div.transform {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.space {
+	letter-spacing: 5px;
+}
+.word {
+	word-spacing: 10px;
+	margin-bottom: 20px;
+}
+.line {
+	line-height: 2.8;
+	text-indent: 100px;
+	margin-bottom: 30px;
+}
+.white {
+	white-space: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
