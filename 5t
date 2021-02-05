@@ -27,6 +27,99 @@ h
 rtg# Ruby program to illustrate the  
 # if - else - if statement 
   
+ul {
+	list-style-type: none;
+	padding: 0;
+	background-color: #666;
+	text-align: center;
+	position: sticky;
+	top: 10px;
+}
+ul li {
+	display: inline;
+	margin-right: 10px;
+}
+ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+ul li a:hover {
+	background-color: black;
+}
+
+
+
+
+
+.div1 {
+	width: 20%;
+	height: 300px;color: gray;
+	background: red;
+	float: left;
+}
+.div2 {
+	width: 20%;
+	height: 300px;
+	background: orange;
+	float: left;
+}
+.div3 {
+	width: 20%;
+	height: 300px;color: red;
+	background: pink;
+	float: left;
+}
+.div4 {
+	width: 20%;
+	height: 300px;color: white;
+	background: black;
+	float: left;
+}
+
+
+
+.jekono {
+	border: 2px solid black;
+	overflow: hidden;
+/*	width: 1000px;*/
+	margin-bottom: 25px;
+	/*margin-left: 300px;*/
+}
+img {
+	float: left;
+}
+
+.over {
+	width: 200px;
+	height: 300px;
+	background: black;color: white;
+	overflow: auto;
+}
+
+
+.a {
+    color: red;
+    background-color: green;
+    height: 300px;width: 500px;
+    display: inline;
+}
+.b {
+    color: red;
+    background-color: blue;
+    height: 100px;width: 500px;
+    display: inline-block;
+}
+.c {
+    color: red;
+    background-color: gray;
+    height: 100px;
+    display: block;width: 500px;
+}
+
+
 
 #c++19%&#4hw4e
 35ythg
