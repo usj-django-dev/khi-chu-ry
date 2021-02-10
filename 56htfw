@@ -1,9 +1,6 @@
 whtfbw4# Ruby program to illustrate the  
 # if - else - if statement 
   
-#c++19%&#
-
-
 a = 78  
 if a  < 50   
   puts "Student is failed"  
@@ -20,6 +17,7 @@ elsif a >= 80 && a <= 90
 elsif a >= 90 && a <= 100   
   puts "Student gets A+ grade"    
 end
+
 
 
 a = 78  
