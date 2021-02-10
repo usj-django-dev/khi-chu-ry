@@ -4,33 +4,7 @@ h
 rtg# Ruby program to illustrate the  
 # if - else - if statement 
   
-ibUR/,jGU57A#,SibUR/,jGU57A#,SibUR/,jGU57A#,S
 
-#c++19%&#4hw4e
-35ythg
-h
-rtg# Ruby program to illustrate the  
-# if - else - if statement 
-  
-ul {
-	list-style-type: none;
-	padding: 0;
-	background-color: #666;
-	text-align: center;
-	position: sticky;
-	top: 10px;
-}
-ul li {
-	display: inline;
-	margin-right: 10px;
-}
-ul li a {
-	color: #fff;
-	text-decoration: none;
-	padding: 10px 20px;
-	display: inline-block;
-	text-transform: uppercase;
-}
 ul li a:hover {
 	background-color: black;
 }
