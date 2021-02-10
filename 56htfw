@@ -1,6 +1,10 @@
 whtfbw4# Ruby program to illustrate the  
+
+
+
+
+
 # if - else - if statement 
-  
 a = 78  
 if a  < 50   
   puts "Student is failed"  
