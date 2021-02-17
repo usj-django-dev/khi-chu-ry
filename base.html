@@ -31,6 +31,28 @@
 
 
 
+          </div>
+        </div>
+        {% else %}
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'App_Login:signup' %}"> Sign Up </span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'App_Login:login' %}"> Login </span></a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+
+
+<div class="container" style="padding-top:20px;">
+  {% block body_block %}
+
+
+  {% endblock %}
+
+</div>
+
 
 
 
