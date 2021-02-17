@@ -49,36 +49,6 @@ testStr = Format(testDateTime, "HH:mm:ss")
 testStr = Format(23)
 
 
-' Returns 0.
-testPos = InStr(1, searchString, "W")
-
-' Returns the value of testDateTime in user-defined date/time formats.
-' Returns "5:4:23".
-testStr = Format(testDateTime, "h:m:s")
-' Returns "05:04:23 PM".
-testStr = Format(testDateTime, "hh:mm:ss tt")
-' Returns "Saturday, Jan 27 2001".
-testStr = Format(testDateTime, "dddd, MMM d yyyy")
-' Returns "17:04:23".
-testStr = Format(testDateTime, "HH:mm:ss")
-' Returns "23".
-testStr = Format(23)
-
-
-
-
-
-' Returns the value of testDateTime in user-defined date/time formats.
-' Returns "5:4:23".
-testStr = Format(testDateTime, "h:m:s")
-' Returns "05:04:23 PM".
-testStr = Format(testDateTime, "hh:mm:ss tt")
-' Returns "Saturday, Jan 27 2001".
-testStr = Format(testDateTime, "dddd, MMM d yyyy")
-' Returns "17:04:23".
-testStr = Format(testDateTime, "HH:mm:ss")
-' Returns "23".
-testStr = Format(23)
 
 
 ' Returns 0.
@@ -100,10 +70,36 @@ testStr = Format(23)
 
 
 
+' Returns the value of testDateTime in user-defined date/time formats.
+' Returns "5:4:23".
+testStr = Format(testDateTime, "h:m:s")
+' Returns "05:04:23 PM".
+testStr = Format(testDateTime, "hh:mm:ss tt")
+' Returns "Saturday, Jan 27 2001".
+testStr = Format(testDateTime, "dddd, MMM d yyyy")
+' Returns "17:04:23".
+testStr = Format(testDateTime, "HH:mm:ss")
+' Returns "23".
+testStr = Format(23)
 
 
 
 
+
+' Returns 0.
+testPos = InStr(1, searchString, "W")
+
+' Returns the value of testDateTime in user-defined date/time formats.
+' Returns "5:4:23".
+testStr = Format(testDateTime, "h:m:s")
+' Returns "05:04:23 PM".
+testStr = Format(testDateTime, "hh:mm:ss tt")
+' Returns "Saturday, Jan 27 2001".
+testStr = Format(testDateTime, "dddd, MMM d yyyy")
+' Returns "17:04:23".
+testStr = Format(testDateTime, "HH:mm:ss")
+' Returns "23".
+testStr = Format(23)
 
 
 
@@ -440,6 +436,83 @@ print("In global scope:", spam)def scope_test():
     print("After nonlocal assignment:", spam)
     do_global()
     print("After global assignment:", spam)
+
+
+
+
+
+
+' Returns 0.
+testPos = InStr(1, searchString, "W")
+
+' Returns the value of testDateTime in user-defined date/time formats.
+' Returns "5:4:23".
+testStr = Format(testDateTime, "h:m:s")
+' Returns "05:04:23 PM".
+testStr = Format(testDateTime, "hh:mm:ss tt")
+' Returns "Saturday, Jan 27 2001".
+testStr = Format(testDateTime, "dddd, MMM d yyyy")
+' Returns "17:04:23".
+testStr = Format(testDateTime, "HH:mm:ss")
+' Returns "23".
+testStr = Format(23)
+
+
+' Returns 0.
+testPos = InStr(1, searchString, "W")
+
+' Returns the value of testDateTime in user-defined date/time formats.
+' Returns "5:4:23".
+testStr = Format(testDateTime, "h:m:s")
+' Returns "05:04:23 PM".
+testStr = Format(testDateTime, "hh:mm:ss tt")
+' Returns "Saturday, Jan 27 2001".
+testStr = Format(testDateTime, "dddd, MMM d yyyy")
+' Returns "17:04:23".
+testStr = Format(testDateTime, "HH:mm:ss")
+' Returns "23".
+testStr = Format(23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+' Returns the value of testDateTime in user-defined date/time formats.
+' Returns "5:4:23".
+testStr = Format(testDateTime, "h:m:s")
+' Returns "05:04:23 PM".
+testStr = Format(testDateTime, "hh:mm:ss tt")
+' Returns "Saturday, Jan 27 2001".
+testStr = Format(testDateTime, "dddd, MMM d yyyy")
+' Returns "17:04:23".
+testStr = Format(testDateTime, "HH:mm:ss")
+' Returns "23".
+testStr = Format(23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 scope_test()
 print("In global scope:", spam)def scope_test():
