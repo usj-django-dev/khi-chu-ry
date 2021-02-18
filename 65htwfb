@@ -23,7 +23,11 @@ if corona_affected == 'yes':
     print('Stay Safe')
 else:
     print('You can enter in the univerity')
+    
+    
 ##################################################################################################################################################################################
+
+
 
 print('What is your name?')
 myname = input()
