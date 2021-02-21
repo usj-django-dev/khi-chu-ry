@@ -13,6 +13,31 @@ ul li a:hover {
   const Tasks = () => {
 
 
+div1 {
+	width: 20%;
+	height: 300px;color: gray;
+	background: red;
+	float: left;
+}
+.div2 {
+	width: 20%;
+	height: 300px;
+	background: orange;
+	float: left;
+}
+.div3 {
+	width: 20%;
+	height: 300px;color: red;
+	background: pink;
+	float: left;
+}
+.div4 {
+	width: 20%;
+	height: 300px;color: white;
+	background: black;
+	float: left;
+}
+
 
 
 
