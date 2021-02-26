@@ -16,8 +16,6 @@ export default Body;
 
 
 
-
-
 import React from 'react';
 
 
