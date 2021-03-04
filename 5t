@@ -42,6 +42,9 @@ div1 {
 }
 
 
+
+
+
 .div4 {
 	width: 20%;
 	height: 300px;color: white;
@@ -51,12 +54,15 @@ div1 {
 
 
 
+
+
 div1 {
 	width: 20%;
 	height: 300px;color: gray;
 	background: red;
 	float: left;
 }
+
 
 
 
@@ -69,12 +75,15 @@ div1 {
 
 
 
+
 .div3 {
 	width: 20%;
 	height: 300px;color: red;
 	background: pink;
 	float: left;
 }
+
+
 
 
 
@@ -93,6 +102,8 @@ div1 {
 	background: red;
 	float: left;
 }
+
+
 
 
 
