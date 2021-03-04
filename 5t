@@ -4,6 +4,7 @@ h
 rtg# Ruby program to illustrate the  
 # if - else - if statement 
   
+  
 
 ul li a:hover {
 	background-color: black;
@@ -20,12 +21,16 @@ div1 {
 	float: left;
 }
 
+
+
 .div2 {
 	width: 20%;
 	height: 300px;
 	background: orange;
 	float: left;
 }
+
+
 .div3 {
 	width: 20%;
 	height: 300px;color: red;
